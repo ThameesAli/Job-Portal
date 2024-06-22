@@ -1,0 +1,50 @@
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    text-align: left;
+}
+
+.table-hover tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-info {
+    background-color: #673AB7;
+    border-color: #673AB7;
+    color: white;
+}
+
+#job-search-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(100%); /* Initially hidden */
+  }
+  
+  #job-search-form.open {
+    transform: translateY(0); /* Show when triggered */
+  }
+  

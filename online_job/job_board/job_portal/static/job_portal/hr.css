@@ -1,0 +1,29 @@
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    text-align: left;
+}
+
+.table-hover tr:hover {
+    background-color: #f1f1f1;
+}

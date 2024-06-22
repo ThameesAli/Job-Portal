@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="{% static 'job_portal/navbar.css' %}">
+    <style>
+      .user {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+      </div>
+      {% if request.user.is_authenticated %}
+      <span class="user">Hello, {{request.user}}  &nbsp;</span>
+      <span><a class="user btn btn-info" href="{% url 'logout' %}">Logout</a></span>
+      {% else %}
+          <span><a class="user" href="{% url 'login' %}">Login</a></span>
+          <span><a class="user" href="{% url 'register' %}">Register</a></span>
+      {% endif %}
+  </nav>
+</body>
+</html>

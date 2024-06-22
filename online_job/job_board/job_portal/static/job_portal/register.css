@@ -1,0 +1,20 @@
+.maindiv {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 0.5rem;
+}
